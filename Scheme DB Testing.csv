@@ -1,0 +1,47 @@
+﻿,,,,,,,
+TC ID,Description,Steps,Expected Results,Actual Reslts,Test Data,Priority,Status
+,,,,,,,
+TC_001,Check table presence In the DB Scheme,show tables;,The names of the tables should be displayed in the list,As Expected,NA,P1,Passed
+TC_002,Check table name convention,show tables;,"The names of the tables should be single word.
+Names should not contain spaces.",As Expected,NA,P1,Passed
+TC_003,Check number of columns in a table,"SELECT count(*) AS NumberOfColumns
+FROM Information_scheme.columns 
+WHERE table_name = 'customers';",13,13,NA,P1,Passed
+TC_004,Check names of columns in a table,"SELECT column_name 
+FROM Information_scheme.columns 
+WHERE table_name = 'customers';",As mentioned in the DB design,As Expected,NA,P1,Passed
+TC_005,Check data type of columns in a table,"SELECT column_name, data_type
+FROM Information_scheme.columns 
+WHERE table_name = 'customers';",As mentioned in the DB design,As Expected,NA,P1,Passed
+TC_006,Check size of the columns in a table,"SELECT column_name, column_type
+FROM Information_scheme.columns 
+WHERE table_name = 'customers';",As mentioned in the DB design,As Expected,NA,P1,Passed
+TC_007,Check nulls fields in a table,"SELECT column_name, is_nullable
+FROM Information_scheme.columns 
+WHERE table_name = 'customers';",As mentioned in the DB design,As Expected,NA,P1,Passed
+TC_008,Check the keys of a table,"SELECT column_name, column_key
+FROM Information_scheme.columns 
+WHERE table_name = 'customers';",As mentioned in the DB design,As Expected,NA,P1,Passed
+,,,,,,,
+,,,,,,,
+TC_009,Check table presence In the DB Scheme,show tables;,The names of the tables should be displayed in the list,As Expected,NA,P1,Passed
+TC_010,Check table name convention,show tables;,"The names of the tables should be single word.
+Names should not contain spaces.",As Expected,NA,P1,Passed
+TC_011,Check number of columns in a table,"SELECT count(*) AS NumberOfColumns
+FROM Information_scheme.columns 
+WHERE table_name = 'products';",9,As Expected,NA,P1,Passed
+TC_012,Check names of columns in a table,"SELECT column_name 
+FROM Information_scheme.columns 
+WHERE table_name = 'products';",As mentioned in the DB design,As Expected,NA,P1,Passed
+TC_013,Check data type of columns in a table,"SELECT column_name, data_type
+FROM Information_scheme.columns 
+WHERE table_name = 'products';",As mentioned in the DB design,As Expected,NA,P1,Passed
+TC_014,Check size of the columns in a table,"SELECT column_name, column_type
+FROM Information_scheme.columns 
+WHERE table_name = 'products';",As mentioned in the DB design,As Expected,NA,P1,Passed
+TC_015,Check nulls fields in a table,"SELECT column_name, is_nullable
+FROM Information_scheme.columns 
+WHERE table_name = 'products';",As mentioned in the DB design,As Expected,NA,P1,Passed
+TC_016,Check the keys of a table,"SELECT column_name, column_key
+FROM Information_scheme.columns 
+WHERE table_name = 'products';",As mentioned in the DB design,As Expected,NA,P1,Passed
